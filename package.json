@@ -1,9 +1,14 @@
-﻿{
+{
   "name": "speed-tier-tool",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "test:web": "node --test tests/speed.test.js"
+    "test:web": "node --test tests/speed.test.js",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.79.0"
   }
 }
