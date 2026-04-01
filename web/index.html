@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>James' Pokémon Speed Tier Tool</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="topbar-head">
+        <div class="brand-block">
+          <h1>James' Pokemon Speed Tier Tool</h1>
+          <p class="subtitle">A sharper static reference for Pokemon Champions speed tiers, built for quick scanning, fast filtering, and clean clipboard-friendly lookup.</p>
+        </div>
+
+        <div id="status" class="status status-head" aria-live="polite">Loading data...</div>
+      </div>
+
+      <div class="topbar-toolbar">
+        <section class="filter-group toolbar-group toolbar-group-ruleset">
+          <h2>Ruleset</h2>
+          <div id="rulesetControls" class="ruleset-controls" role="group" aria-label="Ruleset filters"></div>
+        </section>
+
+        <section class="filter-group toolbar-group">
+          <h2>Modifiers</h2>
+          <div id="modifierControls" class="ruleset-controls" role="group" aria-label="Modifier filters"></div>
+        </section>
+
+        <section class="filter-group toolbar-group">
+          <h2>Natures</h2>
+          <div id="natureControls" class="ruleset-controls" role="group" aria-label="Nature filters"></div>
+        </section>
+
+        <section class="filter-group toolbar-group">
+          <h2>Stat Points</h2>
+          <div id="evControls" class="ruleset-controls" role="group" aria-label="Stat point filters"></div>
+        </section>
+
+        <section class="filter-group toolbar-group toolbar-group-stages">
+          <h2>Stat Stages</h2>
+          <div id="stageControls" class="ruleset-controls" role="group" aria-label="Stat stage filters"></div>
+        </section>
+
+        <label class="toolbar-search" for="pokemonSearch">
+          <span class="search-label">Search Pokemon</span>
+          <input id="pokemonSearch" class="search-input" type="search" placeholder="e.g. garchomp" autocomplete="off">
+          <div id="pokemonSearchSuggestions" class="search-suggestions" hidden></div>
+        </label>
+      </div>
+    </header>
+    <section id="error" class="error" role="alert" hidden></section>
+
+    <section id="compareTray" class="compare-tray" hidden aria-label="Pinned comparison tray">
+      <div class="compare-tray-head">
+        <div>
+          <h2>Comparison Tray</h2>
+          <p>Pin Pokémon tiles or speed tiers to keep them in view while you browse.</p>
+        </div>
+        <button id="clearCompareBtn" class="compare-clear-btn" type="button">Clear Pinned Items</button>
+      </div>
+
+      <div class="compare-tray-grid">
+        <section class="compare-section">
+          <h3>Pinned Pokémon</h3>
+          <div id="comparePokemonList" class="compare-list"></div>
+        </section>
+
+        <section class="compare-section">
+          <h3>Pinned Speed Tiers</h3>
+          <div id="compareTierList" class="compare-list"></div>
+        </section>
+      </div>
+    </section>
+
+    <section id="resultsActions" class="results-actions" hidden>
+      <button id="blockActionBtn" class="results-action-btn" type="button">Collapse All Speed Blocks</button>
+    </section>
+
+    <section class="tiers-shell">
+      <div id="tiers" class="tiers" aria-label="Speed tiers"></div>
+      <div id="loadMoreSentinel" class="sentinel" hidden></div>
+    </section>
+
+    <details class="site-disclosure">
+      <summary class="site-disclosure-btn">Sources, Licenses, and Method</summary>
+      <div class="site-disclosure-panel">
+        <section class="site-disclosure-section">
+          <h2>Data Source</h2>
+          <p>Primary Pokemon data source: <a href="https://pokeapi.co/" target="_blank" rel="noreferrer">PokeAPI</a>.</p>
+          <p>PokeAPI repositories referenced for data and API service: <a href="https://github.com/PokeAPI/pokeapi" target="_blank" rel="noreferrer">PokeAPI/pokeapi</a> and <a href="https://github.com/PokeAPI/api-data" target="_blank" rel="noreferrer">PokeAPI/api-data</a>. Both repositories currently report BSD 3-Clause licensing.</p>
+        </section>
+
+        <section class="site-disclosure-section">
+          <h2>Sprite and Asset Sources</h2>
+          <p>Pokemon sprites in this tool are sourced through PokeAPI sprite metadata, with this build preferring Pokemon Home, Scarlet/Violet, Emerald, Brilliant Diamond / Shining Pearl, then PokeAPI <code>front_default</code>, before falling back to a locally generated placeholder.</p>
+          <p>Upstream sprite repository: <a href="https://github.com/PokeAPI/sprites" target="_blank" rel="noreferrer">PokeAPI/sprites</a>. That repository uses its own <code>LICENCE.txt</code> and documents mixed sprite provenance, including some community-created sprite sets.</p>
+          <p>Additional community sprite reference: <a href="https://github.com/smogon/sprites" target="_blank" rel="noreferrer">smogon/sprites</a>. The repository code is MIT-licensed, while its README states the sprites themselves are property of Nintendo / Game Freak / The Pokemon Company, with some community-created sprite licensing still being determined.</p>
+        </section>
+
+        <section class="site-disclosure-section">
+          <h2>Favicon and Fallback Assets</h2>
+          <p>Favicon asset: the Poke Ball item sprite from <code>PokeAPI/sprites</code>.</p>
+          <p>Fallback sprite asset: generated locally by this project as a transparent placeholder image.</p>
+        </section>
+
+        <section class="site-disclosure-section">
+          <h2>Code Method</h2>
+          <p>Primary external data source: PokeAPI.</p>
+          <p>Development method for this project: vibecoding / AI-assisted iterative development.</p>
+        </section>
+      </div>
+    </details>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

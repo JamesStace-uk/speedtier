@@ -1,0 +1,9 @@
+﻿{
+  "name": "speed-tier-tool",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:web": "node --test tests/speed.test.js"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-04-01T20:52:46+00:00",
+  "defaultRulesetId": "ChampionsFullDex",
+  "pokemonCount": 1350,
+  "missingSpriteCount": 62,
+  "spriteSourceCounts": {
+    "home": 1276,
+    "scarlet-violet": 2,
+    "emerald": 0,
+    "bdsp": 0,
+    "official-artwork": 0,
+    "front_default": 10,
+    "fallback": 62
+  },
+  "fallbackSpritePath": "sprites/fallback.png"
+}

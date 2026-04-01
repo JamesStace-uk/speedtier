@@ -1,0 +1,27 @@
+﻿{
+  "schemaVersion": "1.0.1",
+  "includePokemon": {
+    "mode": "all"
+  },
+  "defaultRulesetId": "ChampionsFullDex",
+  "rulesets": [
+    {
+      "id": "ChampionsFullDex",
+      "label": "Champions Full Dex",
+      "description": "All Pokémon Seen in Champions Promotion Material as-of 01/04/2026",
+      "pokemonNames": [
+		"venusaur", "venusaur-mega", "charizard", "charizard-mega-x", "charizard-mega-y", "blastoise", "blastoise-mega", "beedrill", "beedrill-mega", "pikachu", "raichu", "raichu-mega-x", "raichu-mega-y", "raichu-alola", "clefable", "clefable-mega", "ninetales", "ninetales-alola", "arcanine", "arcanine-hisui", "alakazam", "alakazam-mega", "victreebel", "victreebel-mega", "slowbro", "slowbro-mega", "slowbro-galar", "gengar", "gengar-mega", "kangaskhan", "kangaskhan-mega", "starmie", "starmie-mega", "pinsir", "pinsir-mega", "gyarados", "gyarados-mega", "ditto", "vaporeon", "jolteon", "flareon", "aerodactyl", "aerodactyl-mega", "snorlax", "dragonite", "dragonite-mega", "meganium", "meganium-mega", "typhlosion", "typhlosion-hisui", "feraligatr", "feraligatr-mega", "ampharos", "ampharos-mega", "azumarill", "politoed", "espeon", "umbreon", "slowking", "steelix", "steelix-mega", "scizor", "scizor-mega", "heracross", "heracross-mega", "skarmory", "skarmory-mega", "houndoom", "houndoom-mega", "tyranitar", "tyranitar-mega", "pelipper", "gardevoir", "gardevoir-mega", "sableye", "sableye-mega", "aggron", "aggron-mega", "torkoal", "altaria", "altaria-mega", "milotic", "absol", "absol-mega", "absol-mega-z", "metagross", "metagross-mega", "torterra", "infernape", "empoleon", "lopunny", "lopunny-mega", "spiritomb", "garchomp", "garchomp-mega", "garchomp-mega-z", "lucario", "lucario-mega", "lucario-mega-z", "hippowdon", "abomasnow", "abomasnow-mega", "weavile", "rhyperior", "leafeon", "glaceon", "gliscor", "mamoswine", "gallade", "gallade-mega", "froslass", "froslass-mega", "rotom", "serperior", "emboar", "emboar-mega", "samurott", "samurott-hisui", "excadrill", "excadrill-mega", "audino", "audino-mega", "conkeldurr", "whimsicott", "krookodile", "garbodor", "zoroark", "zoroark-hisui", "vanilluxe", "emolga", "chandelure", "chandelure-mega", "stunfisk-galar", "golurk", "golurk-mega", "hydreigon", "volcarona", "chesnaught", "chesnaught-mega", "delphox", "delphox-mega", "greninja", "greninja-mega", "diggersby", "talonflame", "vivillon", "floette-eternal", "floette-mega", "furfrou", "meowstic-male", "meowstic-mega", "aegislash-shield", "clawitzer", "tyrantrum", "aurorus", "sylveon", "hawlucha", "hawlucha-mega", "goodra", "klefki", "trevenant", "gourgeist-average", "noivern", "decidueye", "decidueye-hisui", "incineroar", "primarina", "toucannon", "crabominable", "crabominable-mega", "lycanroc-midday", "toxapex", "mudsdale", "araquanid", "tsareena", "oranguru", "mimikyu-disguised", "drampa", "drampa-mega", "kommo-o", "corviknight", "appletun", "sandaconda", "polteageist", "hatterene", "grimmsnarl", "mr-rime", "runerigus", "alcremie", "morpeko-full-belly", "dragapult", "kleavor", "ursaluna", "basculegion-male", "sneasler", "meowscarada", "skeledirge", "quaquaval", "pawmot", "maushold-family-of-four", "garganacl", "armarouge", "ceruledge", "scovillain", "scovillain-mega", "tinkaton", "palafin-zero", "orthworm", "glimmora", "glimmora-mega", "dondozo", "tatsugiri-curly", "tatsugiri-curly-mega",  "tatsugiri-stretchy-mega", "tatsugiri-droopy-mega",  "farigiraf", "kingambit", "sinistcha", "archaludon", "hydrapple"
+      ]
+    }
+  ],
+  "sprites": {
+    "download": true,
+    "fallbackSpritePath": "sprites/fallback.png",
+    "requestTimeoutSeconds": 15,
+    "maxConcurrentDownloads": 8,
+    "maxRequestsPerSecond": 5,
+    "buildAtlas": true,
+    "atlasTileSize": 60,
+    "atlasFilename": "sprites/sprite_atlas.png"
+  }
+}
